@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" role="img" aria-label="Margherita pizza">
+<defs><radialGradient id="bg" cx="50%" cy="40%"><stop offset="0" stop-color="#fffaf3"/><stop offset="1" stop-color="#eddcc9"/></radialGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#6b4f3a" flood-opacity=".25"/></filter></defs>
+<rect width="520" height="520" fill="url(#bg)"/>
+<circle cx="260" cy="260" r="192" fill="#C98E49" filter="url(#shadow)"/>
+<circle cx="260" cy="260" r="171" fill="#F3C36A"/>
+<circle cx="260" cy="260" r="153" fill="#D94F3D" opacity=".94"/>
+<circle cx="260" cy="260" r="143" fill="#F2C461" opacity=".93"/>
+<circle cx="165" cy="150" r="27" fill="#F8F0D8" stroke="#E9D8B6" stroke-width="3"/><circle cx="285" cy="135" r="27" fill="#F8F0D8" stroke="#E9D8B6" stroke-width="3"/><circle cx="355" cy="230" r="27" fill="#F8F0D8" stroke="#E9D8B6" stroke-width="3"/><circle cx="205" cy="260" r="27" fill="#F8F0D8" stroke="#E9D8B6" stroke-width="3"/><circle cx="305" cy="325" r="27" fill="#F8F0D8" stroke="#E9D8B6" stroke-width="3"/><circle cx="145" cy="340" r="27" fill="#F8F0D8" stroke="#E9D8B6" stroke-width="3"/><circle cx="365" cy="360" r="27" fill="#F8F0D8" stroke="#E9D8B6" stroke-width="3"/><path d="M215 175 q22 -27 42 2 q-20 28 -42 -2" fill="#5D8A4E"/><path d="M340 150 q22 -27 42 2 q-20 28 -42 -2" fill="#5D8A4E"/><path d="M155 250 q22 -27 42 2 q-20 28 -42 -2" fill="#5D8A4E"/><path d="M270 275 q22 -27 42 2 q-20 28 -42 -2" fill="#5D8A4E"/><path d="M385 290 q22 -27 42 2 q-20 28 -42 -2" fill="#5D8A4E"/><path d="M220 370 q22 -27 42 2 q-20 28 -42 -2" fill="#5D8A4E"/><circle cx="185" cy="205" r="18" fill="#CF4738"/><circle cx="330" cy="320" r="18" fill="#CF4738"/>
+<circle cx="260" cy="260" r="168" fill="none" stroke="#F7D08C" stroke-width="12" opacity=".75"/>
+</svg>

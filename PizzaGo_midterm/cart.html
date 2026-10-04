@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PizzaGo cart and checkout page.">
+    <title>Cart & Checkout | PizzaGo</title>
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="brand-mark">🍕</span><span class="brand-name">PizzaGo</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tracking.html">Track Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2"><a class="nav-link cart-link active" aria-current="page" href="cart.html">🛒 Cart <span class="cart-count">0</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="page-shell">
+        <header class="page-banner">
+            <span class="eyebrow">Almost there</span>
+            <h1>Cart & Checkout</h1>
+            <p class="section-subtitle">Check your pizzas, add delivery details and place the order.</p>
+        </header>
+
+        <section class="section-card" aria-labelledby="cart-title">
+            <h2 class="section-heading" id="cart-title">Your Order</h2>
+            <p class="section-subtitle">You can change quantity or remove an item before checkout.</p>
+
+            <div id="emptyCart" class="empty-state d-none">
+                <div class="display-5 mb-3">🍕</div>
+                <h3>Your cart is empty</h3>
+                <p>Choose a pizza from the menu to start your order.</p>
+                <a href="menu.html" class="btn btn-pizza">Open menu</a>
+            </div>
+
+            <div class="cart-table-wrap" id="cartTable">
+                <table class="table align-middle cart-table">
+                    <thead>
+                        <tr><th scope="col">Item</th><th scope="col">Price</th><th scope="col">Quantity</th><th scope="col">Total</th><th scope="col">Action</th></tr>
+                    </thead>
+                    <tbody id="cartBody"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section-card dashed" aria-labelledby="checkout-title">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <h2 class="section-heading" id="checkout-title">Delivery Details</h2>
+                    <p class="section-subtitle">Fields marked as required must be completed before ordering.</p>
+
+                    <form id="checkoutForm" class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label class="form-label" for="customerName">Name *</label>
+                            <input class="form-control" id="customerName" type="text" placeholder="Aruzhan" required>
+                            <div class="invalid-feedback">Please enter your name.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="phone">Phone *</label>
+                            <input class="form-control" id="phone" type="tel" placeholder="+7 700 000 00 00" required>
+                            <div class="invalid-feedback">Please enter your phone number.</div>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="address">Delivery address *</label>
+                            <input class="form-control" id="address" type="text" placeholder="Street, building" required>
+                            <div class="invalid-feedback">Please enter a delivery address.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label" for="apartment">Apartment</label>
+                            <input class="form-control" id="apartment" type="text" placeholder="24">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label" for="deliveryTime">Delivery time</label>
+                            <select class="form-select" id="deliveryTime">
+                                <option>As soon as possible</option>
+                                <option>In 1 hour</option>
+                                <option>In 2 hours</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label" for="payment">Payment</label>
+                            <select class="form-select" id="payment">
+                                <option>Card on delivery</option>
+                                <option>Cash</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="comment">Order comment</label>
+                            <textarea class="form-control" id="comment" rows="3" placeholder="For example: call when you arrive"></textarea>
+                        </div>
+                        <div class="col-12 d-lg-none">
+                            <button class="btn btn-pizza w-100" type="submit">Place Order</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-4">
+                    <aside class="order-summary" aria-label="Order summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-line"><span>Subtotal</span><strong id="subtotal">0 ₸</strong></div>
+                        <div class="summary-line"><span>Delivery</span><strong id="deliveryFee">0 ₸</strong></div>
+                        <div class="summary-line summary-total"><span>Total</span><strong id="orderTotal">0 ₸</strong></div>
+                        <button class="btn btn-pizza w-100 mt-3 d-none d-lg-block" type="submit" form="checkoutForm">Place Order</button>
+                        <small class="d-block text-muted mt-3">This student project uses a demo checkout and does not process real payments.</small>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3"><div id="cartToast" class="toast" role="status" aria-live="polite" aria-atomic="true"><div class="toast-header"><strong class="me-auto">PizzaGo</strong><button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button></div><div class="toast-body">Message</div></div></div>
+
+<footer class="site-footer">
+    <div class="container footer-inner"><p>© 2026 PizzaGo. Student midterm project.</p><div class="footer-links"><a href="menu.html">Menu</a><a href="tracking.html">Track Order</a><a href="contact.html">Contact</a></div></div>
+</footer>
+<script src="vendor/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

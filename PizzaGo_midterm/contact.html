@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact PizzaGo and learn more about the delivery service.">
+    <title>Contact | PizzaGo</title>
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="brand-mark">🍕</span><span class="brand-name">PizzaGo</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tracking.html">Track Order</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2"><a class="nav-link cart-link" href="cart.html">🛒 Cart <span class="cart-count">0</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="page-shell">
+        <header class="page-banner">
+            <span class="eyebrow">We are here to help</span>
+            <h1>Contact PizzaGo</h1>
+            <p class="section-subtitle">Need help with an order or want to leave feedback? Use the details below or send a message.</p>
+        </header>
+
+        <section class="section-card" aria-labelledby="contact-title">
+            <div class="contact-grid">
+                <div>
+                    <h2 class="section-heading" id="contact-title">Contact Information</h2>
+                    <ul class="contact-list">
+                        <li><span class="contact-label">Phone</span><strong>+7 700 123 45 67</strong></li>
+                        <li><span class="contact-label">Email</span><strong>hello@pizzago.example</strong></li>
+                        <li><span class="contact-label">Working hours</span><strong>Daily, 10:00–23:00</strong></li>
+                        <li><span class="contact-label">Delivery area</span><strong>Astana city</strong></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="section-heading">Send us a message</h2>
+                    <div class="alert alert-success d-none" id="contactSuccess" role="alert">Thank you! Your message has been sent in this demo.</div>
+                    <form id="contactForm" class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label class="form-label" for="contactName">Name *</label>
+                            <input class="form-control" id="contactName" type="text" required>
+                            <div class="invalid-feedback">Please enter your name.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="contactEmail">Email *</label>
+                            <input class="form-control" id="contactEmail" type="email" required>
+                            <div class="invalid-feedback">Please enter a valid email.</div>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="subject">Subject</label>
+                            <select class="form-select" id="subject">
+                                <option>Order question</option>
+                                <option>Delivery issue</option>
+                                <option>Feedback</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="message">Message *</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                            <div class="invalid-feedback">Please write a short message.</div>
+                        </div>
+                        <div class="col-12"><button class="btn btn-pizza" type="submit">Send Message</button></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-card dashed" aria-labelledby="about-title">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                    <span class="eyebrow">About the service</span>
+                    <h2 class="section-heading" id="about-title">Simple pizza delivery for busy days</h2>
+                    <p class="section-subtitle mb-3">PizzaGo is designed for students and young professionals who want a quick, clear and reliable way to order food without calling a restaurant.</p>
+                    <ul class="about-points">
+                        <li>Clear menu with prices and ingredients.</li>
+                        <li>Simple cart and one-page checkout.</li>
+                        <li>Order tracking with an easy progress timeline.</li>
+                        <li>Responsive layout for desktop, tablet and mobile.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img class="img-fluid" src="images/pizza-box.svg" alt="PizzaGo pizza box illustration">
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner"><p>© 2026 PizzaGo. Student midterm project.</p><div class="footer-links"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="tracking.html">Track Order</a></div></div>
+</footer>
+<script src="vendor/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

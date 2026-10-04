@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" role="img" aria-label="Garden veggie pizza">
+<defs><radialGradient id="bg" cx="50%" cy="40%"><stop offset="0" stop-color="#fffaf3"/><stop offset="1" stop-color="#eddcc9"/></radialGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#6b4f3a" flood-opacity=".25"/></filter></defs>
+<rect width="520" height="520" fill="url(#bg)"/>
+<circle cx="260" cy="260" r="192" fill="#C98E49" filter="url(#shadow)"/>
+<circle cx="260" cy="260" r="171" fill="#F3C36A"/>
+<circle cx="260" cy="260" r="153" fill="#D94F3D" opacity=".94"/>
+<circle cx="260" cy="260" r="143" fill="#F2C461" opacity=".93"/>
+<circle cx="145" cy="145" r="18" fill="#6D8D4F"/><circle cx="235" cy="120" r="18" fill="#D84E3E"/><circle cx="330" cy="150" r="18" fill="#E6B245"/><circle cx="380" cy="220" r="18" fill="#513D48"/><circle cx="185" cy="235" r="18" fill="#4E8D5C"/><circle cx="285" cy="245" r="18" fill="#6D8D4F"/><circle cx="125" cy="300" r="18" fill="#D84E3E"/><circle cx="235" cy="320" r="18" fill="#E6B245"/><circle cx="350" cy="320" r="18" fill="#513D48"/><circle cx="190" cy="385" r="18" fill="#4E8D5C"/><circle cx="320" cy="390" r="18" fill="#6D8D4F"/><ellipse cx="160" cy="190" rx="28" ry="13" fill="#71493D"/><ellipse cx="300" cy="190" rx="28" ry="13" fill="#71493D"/><ellipse cx="215" cy="280" rx="28" ry="13" fill="#71493D"/><ellipse cx="365" cy="365" rx="28" ry="13" fill="#71493D"/>
+<circle cx="260" cy="260" r="168" fill="none" stroke="#F7D08C" stroke-width="12" opacity=".75"/>
+</svg>

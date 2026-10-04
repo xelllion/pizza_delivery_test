@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PizzaGo pizza delivery - fresh pizza, simple ordering and fast delivery.">
+    <title>PizzaGo | Pizza Delivery</title>
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-mark">🍕</span>
+                <span class="brand-name">PizzaGo</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tracking.html">Track Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link cart-link" href="cart.html">🛒 Cart <span class="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="page-shell">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <span class="eyebrow">Fresh from the oven</span>
+                        <h1 id="hero-title">Hot pizza.<br>Fast delivery.</h1>
+                        <p>Choose your favorite pizza, add it to the cart and order in a few simple steps. We bake every pizza after you order it.</p>
+                        <div class="hero-actions">
+                            <a class="btn btn-pizza" href="menu.html">Order Now</a>
+                            <a class="btn btn-outline-pizza" href="tracking.html">Track an Order</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-wrap">
+                        <img class="hero-image" src="images/hero-pizza.svg" alt="Fresh pizza with pepperoni, tomatoes and basil">
+                        <div class="delivery-chip">🚚 Delivery from 30 min</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-card" aria-labelledby="popular-title">
+            <span class="eyebrow">Customer favorites</span>
+            <h2 class="section-heading" id="popular-title">Popular Pizzas</h2>
+            <p class="section-subtitle">A quick choice when you already know you want something delicious.</p>
+
+            <div class="pizza-grid">
+                <article class="pizza-card">
+                    <span class="pizza-tag">Bestseller</span>
+                    <img src="images/pepperoni.svg" alt="Pepperoni pizza">
+                    <div class="pizza-card-body">
+                        <h3>Pepperoni</h3>
+                        <p>Pepperoni, mozzarella and tomato sauce on our classic dough.</p>
+                        <div class="pizza-meta">
+                            <span class="price">3 490 ₸</span>
+                            <button class="btn btn-pizza" type="button" data-add-pizza="pepperoni">Add to cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="pizza-card">
+                    <span class="pizza-tag">Classic</span>
+                    <img src="images/margherita.svg" alt="Margherita pizza">
+                    <div class="pizza-card-body">
+                        <h3>Margherita</h3>
+                        <p>Tomato sauce, mozzarella, ripe tomatoes and fresh basil.</p>
+                        <div class="pizza-meta">
+                            <span class="price">2 990 ₸</span>
+                            <button class="btn btn-pizza" type="button" data-add-pizza="margherita">Add to cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="pizza-card">
+                    <span class="pizza-tag">New</span>
+                    <img src="images/bbq.svg" alt="BBQ chicken pizza">
+                    <div class="pizza-card-body">
+                        <h3>BBQ Chicken</h3>
+                        <p>Chicken, BBQ sauce, mozzarella, red onion and a smoky finish.</p>
+                        <div class="pizza-meta">
+                            <span class="price">3 790 ₸</span>
+                            <button class="btn btn-pizza" type="button" data-add-pizza="bbq">Add to cart</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-4">
+                <a class="btn btn-outline-pizza" href="menu.html">See full menu</a>
+            </div>
+        </section>
+
+        <section class="section-card dashed" aria-labelledby="why-title">
+            <span class="eyebrow">Simple and convenient</span>
+            <h2 class="section-heading" id="why-title">Why PizzaGo?</h2>
+            <p class="section-subtitle">Everything needed for an easy pizza night, without confusing steps.</p>
+
+            <div class="benefit-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🔥</div>
+                    <h3>Fresh & Hot</h3>
+                    <p>We start cooking only after your order is confirmed.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🚚</div>
+                    <h3>Fast Delivery</h3>
+                    <p>A clear order status helps you know when pizza is coming.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🥬</div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Simple recipes with familiar ingredients and clear descriptions.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">💳</div>
+                    <h3>Easy Checkout</h3>
+                    <p>Your cart, delivery information and total are on one page.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="cartToast" class="toast" role="status" aria-live="polite" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">PizzaGo</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">Added to cart.</div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© 2026 PizzaGo. Student midterm project.</p>
+        <div class="footer-links">
+            <a href="menu.html">Menu</a>
+            <a href="tracking.html">Track Order</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="vendor/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

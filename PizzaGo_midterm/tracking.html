@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track a PizzaGo delivery order.">
+    <title>Track Order | PizzaGo</title>
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="brand-mark">🍕</span><span class="brand-name">PizzaGo</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="tracking.html">Track Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2"><a class="nav-link cart-link" href="cart.html">🛒 Cart <span class="cart-count">0</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="page-shell">
+        <header class="page-banner">
+            <span class="eyebrow">Where is my pizza?</span>
+            <h1>Track Your Order</h1>
+            <p class="section-subtitle">Enter your order number to see its current stage. For a demo, use <strong>PG1024</strong>.</p>
+        </header>
+
+        <section class="section-card dashed" aria-labelledby="search-title">
+            <h2 class="section-heading" id="search-title">Order number</h2>
+            <form id="trackingForm" class="track-search">
+                <div class="input-group">
+                    <input class="form-control" id="orderIdInput" type="text" placeholder="For example: PG1024" aria-label="Order number" required>
+                    <button class="btn btn-pizza" type="submit">Track Order</button>
+                </div>
+            </form>
+            <div class="alert alert-warning mt-3 d-none" id="orderNotFound" role="alert">We could not find that order. Check the number or try the demo order PG1024.</div>
+        </section>
+
+        <section class="section-card d-none" id="trackingResult" aria-labelledby="status-title">
+            <span class="eyebrow">Live status</span>
+            <h2 class="section-heading" id="status-title">Your pizza is <span id="trackStatus">Preparing</span></h2>
+            <p class="section-subtitle">Estimated time: <strong id="etaText">20–30 min</strong></p>
+
+            <div class="order-overview">
+                <div class="overview-box"><span>Order number</span><strong id="trackOrderId">PG1024</strong></div>
+                <div class="overview-box"><span>Delivery address</span><strong id="trackAddress">Astana</strong></div>
+                <div class="overview-box"><span>Order total</span><strong id="trackTotal">0 ₸</strong></div>
+            </div>
+
+            <div class="timeline" aria-label="Delivery progress">
+                <div class="timeline-step done"><div class="timeline-dot">✓</div><div class="timeline-label">Order placed</div></div>
+                <div class="timeline-step current"><div class="timeline-dot">2</div><div class="timeline-label">Preparing</div></div>
+                <div class="timeline-step"><div class="timeline-dot">3</div><div class="timeline-label">On the way</div></div>
+                <div class="timeline-step"><div class="timeline-dot">4</div><div class="timeline-label">Delivered</div></div>
+            </div>
+
+            <div class="delivery-visual">
+                <img src="images/delivery.svg" alt="Pizza delivery route illustration">
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner"><p>© 2026 PizzaGo. Student midterm project.</p><div class="footer-links"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="contact.html">Contact</a></div></div>
+</footer>
+<script src="vendor/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

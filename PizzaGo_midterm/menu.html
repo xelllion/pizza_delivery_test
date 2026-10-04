@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PizzaGo menu with classic, chicken, vegetarian and spicy pizzas.">
+    <title>Menu | PizzaGo</title>
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="brand-mark">🍕</span><span class="brand-name">PizzaGo</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tracking.html">Track Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2"><a class="nav-link cart-link" href="cart.html">🛒 Cart <span class="cart-count">0</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="page-shell">
+        <header class="page-banner">
+            <span class="eyebrow">Choose your favorite</span>
+            <h1>Pizza Menu</h1>
+            <p class="section-subtitle">Six clear options, familiar ingredients and no complicated ordering.</p>
+        </header>
+
+        <section class="section-card" aria-labelledby="menu-title">
+            <h2 class="visually-hidden" id="menu-title">Pizza catalog</h2>
+            <div class="filter-row" aria-label="Pizza filters">
+                <button class="btn btn-outline-pizza active" type="button" data-filter="all">All</button>
+                <button class="btn btn-outline-pizza" type="button" data-filter="classic">Classic</button>
+                <button class="btn btn-outline-pizza" type="button" data-filter="chicken">Chicken</button>
+                <button class="btn btn-outline-pizza" type="button" data-filter="vegetarian">Vegetarian</button>
+                <button class="btn btn-outline-pizza" type="button" data-filter="spicy">Spicy</button>
+            </div>
+
+            <div class="row g-4" id="menuGrid">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <article class="pizza-card menu-card" data-category="classic spicy">
+                        <span class="pizza-tag">Bestseller</span>
+                        <img src="images/pepperoni.svg" alt="Pepperoni pizza">
+                        <div class="pizza-card-body">
+                            <h3>Pepperoni</h3>
+                            <p>Pepperoni, mozzarella and tomato sauce. 30 cm.</p>
+                            <div class="pizza-meta"><span class="price">3 490 ₸</span><button class="btn btn-pizza" type="button" data-add-pizza="pepperoni">Add to cart</button></div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <article class="pizza-card menu-card" data-category="classic vegetarian">
+                        <span class="pizza-tag">Classic</span>
+                        <img src="images/margherita.svg" alt="Margherita pizza">
+                        <div class="pizza-card-body">
+                            <h3>Margherita</h3>
+                            <p>Tomato sauce, mozzarella, tomatoes and basil. 30 cm.</p>
+                            <div class="pizza-meta"><span class="price">2 990 ₸</span><button class="btn btn-pizza" type="button" data-add-pizza="margherita">Add to cart</button></div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <article class="pizza-card menu-card" data-category="chicken">
+                        <span class="pizza-tag">New</span>
+                        <img src="images/bbq.svg" alt="BBQ chicken pizza">
+                        <div class="pizza-card-body">
+                            <h3>BBQ Chicken</h3>
+                            <p>Chicken, BBQ sauce, mozzarella and red onion. 30 cm.</p>
+                            <div class="pizza-meta"><span class="price">3 790 ₸</span><button class="btn btn-pizza" type="button" data-add-pizza="bbq">Add to cart</button></div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <article class="pizza-card menu-card" data-category="vegetarian">
+                        <img src="images/veggie.svg" alt="Vegetarian pizza with vegetables">
+                        <div class="pizza-card-body">
+                            <h3>Garden Veggie</h3>
+                            <p>Bell pepper, mushrooms, olives, tomato and mozzarella. 30 cm.</p>
+                            <div class="pizza-meta"><span class="price">3 290 ₸</span><button class="btn btn-pizza" type="button" data-add-pizza="veggie">Add to cart</button></div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <article class="pizza-card menu-card" data-category="classic vegetarian">
+                        <span class="pizza-tag">Cheesy</span>
+                        <img src="images/cheese.svg" alt="Four cheese pizza">
+                        <div class="pizza-card-body">
+                            <h3>Four Cheese</h3>
+                            <p>Mozzarella, cheddar, parmesan and blue cheese. 30 cm.</p>
+                            <div class="pizza-meta"><span class="price">3 590 ₸</span><button class="btn btn-pizza" type="button" data-add-pizza="cheese">Add to cart</button></div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <article class="pizza-card menu-card" data-category="spicy">
+                        <span class="pizza-tag">Hot</span>
+                        <img src="images/spicy.svg" alt="Spicy salami pizza">
+                        <div class="pizza-card-body">
+                            <h3>Spicy Salami</h3>
+                            <p>Spicy salami, jalapeño, mozzarella and tomato sauce. 30 cm.</p>
+                            <div class="pizza-meta"><span class="price">3 690 ₸</span><button class="btn btn-pizza" type="button" data-add-pizza="spicy">Add to cart</button></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="cartToast" class="toast" role="status" aria-live="polite" aria-atomic="true">
+        <div class="toast-header"><strong class="me-auto">PizzaGo</strong><button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button></div>
+        <div class="toast-body">Added to cart.</div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© 2026 PizzaGo. Student midterm project.</p>
+        <div class="footer-links"><a href="index.html">Home</a><a href="tracking.html">Track Order</a><a href="contact.html">Contact</a></div>
+    </div>
+</footer>
+<script src="vendor/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
